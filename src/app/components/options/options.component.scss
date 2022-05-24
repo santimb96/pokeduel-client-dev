@@ -1,0 +1,44 @@
+//VARIABLES
+@import '../../../variables';
+@import '../../../mixins';
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+//FIXME: fix the color of the button
+$secondary: $secondary;
+
+.mat-slider-thumb-container {
+    .mat-slider-thumb {
+        background-color: blue !important;
+    }
+}
+
+
+.section-menu {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+
+        .mat-slider {
+            width: 60%;
+        }
+    }
+
+    .img-card {
+        display: flex;
+        justify-content: center;
+        margin-bottom: -3vh;
+
+        .mat-card-image {
+            width: 25vh;
+        }
+    }
+
+}

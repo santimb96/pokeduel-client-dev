@@ -1,0 +1,103 @@
+//VARIABLES
+@import '../../../variables';
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+
+.mat-grid-list {
+    height: 360px;
+}
+
+.pokemon-left {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    place-content: flex-end;
+}
+
+.pokemon-right {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 60% !important;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+.attack-buttons{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 1vh;
+    width: 120px;
+}
+
+.pokemon-name{
+    background-color: $black;
+    border-radius: 1vh;
+    width: 20vh;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+@include media-breakpoint-up(xl) {
+    .card-img {
+        width:30% !important;
+    }
+
+    .pokemon-left {
+        height: 60%;
+    }
+
+    .attack-buttons{
+        display: flex;
+        align-self: start;
+    }
+
+    .pokeR-height{
+        margin-bottom: 110px !important;
+    }
+
+    .background-battle{
+        background-image:url('../../../assets/img/background-xl-battle.jpg'); 
+        background-size: cover;
+    }
+    
+}
+
+@include media-breakpoint-down(lg){
+    .background-battle{
+        background-image:url('../../../assets/img/bg-battle.png'); 
+        background-size: cover;
+    }
+}
